@@ -9,25 +9,33 @@ const Navbar = () => {
       <img src={assets.logo} alt="" className="w-[150px] h-auto" />
       <ul className="flex justify-center items-center gap-7 max-[948px]:hidden">
         <li
-          className={`text-gray-600 ${menu === "home" && "underline"}`}
+          className={`text-gray-600 relative ${
+            menu === "home" && "activeNavLink"
+          }`}
           onClick={() => setMenu("home")}
         >
           <a href="#">Home</a>
         </li>
         <li
-          className={`text-gray-600 ${menu === "menu" && "underline"}`}
+          className={`text-gray-600 relative ${
+            menu === "menu" && "activeNavLink"
+          }`}
           onClick={() => setMenu("menu")}
         >
           <a href="#">Menu</a>
         </li>
         <li
-          className={`text-gray-600 ${menu === "mobileApp" && "underline"}`}
+          className={`text-gray-600 relative ${
+            menu === "mobileApp" && "activeNavLink"
+          }`}
           onClick={() => setMenu("mobileApp")}
         >
           <a href="#">Mobile-app</a>
         </li>
         <li
-          className={`text-gray-600 ${menu === "contactUs" && "underline"}`}
+          className={`text-gray-600 relative ${
+            menu === "contactUs" && "activeNavLink"
+          }`}
           onClick={() => setMenu("contactUs")}
         >
           <a href="#">Contact us</a>
