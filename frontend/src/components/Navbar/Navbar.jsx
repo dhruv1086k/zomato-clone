@@ -5,7 +5,7 @@ const Navbar = () => {
   const [menu, setMenu] = useState("home");
 
   return (
-    <div className="flex w-full h-[10vh] justify-between items-center">
+    <div className="flex w-full h-[12vh] justify-between items-center">
       <img src={assets.logo} alt="" className="w-[150px] h-auto" />
       <ul className="flex justify-center items-center gap-7 max-[948px]:hidden">
         <li
@@ -53,7 +53,7 @@ const Navbar = () => {
             alt=""
             className="w-6 h-6 cursor-pointer"
           />
-          <div className="w-2 h-2 bg-red-400 rounded-full absolute -right-1 -top-1"></div>
+          <div className="w-2 h-2 bg-red-400 rounded-full absolute -right-1 -top-1 animate-ping"></div>
         </div>
         <button className="px-5 py-2 border-2 border-amber-400 rounded-full cursor-pointer hover:bg-amber-100 transition-all duration-200 ease-in">
           Sign in
