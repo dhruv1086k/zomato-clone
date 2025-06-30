@@ -29,3 +29,11 @@
     opacity: 1;
   }
 }
+
+.explore-menu-list {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.explore-menu-list::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
